@@ -1,0 +1,10 @@
+# 默认配置文件
+server:
+# 修改端口
+  port: 8081
+# 增加前缀
+  context-path: /girl
+
+theUser:
+  name: doubibobo
+  age: 18

@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: product
+  datasource:
+      url: jdbc:mysql://127.0.0.1:3306/dbgirls
+      username: doubibobo
+      password: 12151618
+      dbcp2:
+        driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+#    create 可以自动创建表，如果原来有
+#   此表，则会进行删除操作
+#   update 可以自动创建表，但是不会删除表
+      ddl-auto: update
+#      可以看到sql语句的操作
+    show-sql: true
