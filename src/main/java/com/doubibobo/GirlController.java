@@ -13,7 +13,10 @@ public class GirlController {
     @Autowired
     private DemoRepository demoRepository;
 
-    @GetMapping(value = "girls")
+    @Autowired
+    private DemoService demoService;
+
+    @GetMapping(value = "/girls")
     public List<Demo> demoList() {
         return demoRepository.findAll();
     }
@@ -59,7 +62,7 @@ public class GirlController {
      * @param cupSize   罩杯
      * @param age   年龄
      */
-    @PutMapping(value = "updateone/{id}")
+    @PutMapping(value = "/updateone/{id}")
     public Demo demoUpdate(@PathVariable("id") Integer id,
                            @PathVariable("cupSize") String cupSize,
                            @PathVariable("age") Integer age) {
@@ -74,8 +77,13 @@ public class GirlController {
      * 删除一条记录
      * @param id 主键
      */
-    @DeleteMapping(value = "deleteone")
+    @DeleteMapping(value = "/deleteone")
     public void demoDelete(@PathVariable("id") Integer id) {
         demoRepository.delete(id);
+    }
+
+    @PostMapping(value = "/findInsertTwo")
+    public void demoInsertTwo() {
+        demoService.insertTwo();
     }
 }
