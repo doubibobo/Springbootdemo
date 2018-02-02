@@ -1,9 +1,10 @@
-package com.doubibobo;
+package com.doubibobo.domain;
 
 import javax.persistence.Entity;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.Min;
 
 /**
  * Created by zhuch on 2018/2/1.
@@ -14,7 +15,10 @@ public class Demo {
     @Id
     @GeneratedValue
     private Integer id;
+
     private String cupSize;
+
+    @Min(value = 18, message = "未成年少女禁止入内")
     private Integer age;
 
     public Demo() {

@@ -1,5 +1,6 @@
-package com.doubibobo;
+package com.doubibobo.repository;
 
+import com.doubibobo.domain.Demo;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
@@ -10,5 +11,5 @@ import java.util.List;
 public interface DemoRepository extends JpaRepository<Demo, Integer> {
 
     // 通过年龄来查询
-    public List<Demo> findByAge();
+    public List<Demo> findByAge(Integer age);
 }

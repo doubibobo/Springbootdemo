@@ -1,4 +1,4 @@
-package com.doubibobo;
+package com.doubibobo.controller;
 
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;

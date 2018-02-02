@@ -1,5 +1,6 @@
-package com.doubibobo;
+package com.doubibobo.controller;
 
+import com.doubibobo.properties.UserProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

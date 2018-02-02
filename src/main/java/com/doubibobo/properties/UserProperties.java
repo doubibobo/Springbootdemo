@@ -1,4 +1,4 @@
-package com.doubibobo;
+package com.doubibobo.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
