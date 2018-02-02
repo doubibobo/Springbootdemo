@@ -5,7 +5,7 @@ import com.doubibobo.domain.Result;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
-import utils.ResultUtil;
+import com.doubibobo.utils.ResultUtil;
 
 /**
  * Created by zhuch on 2018/2/2.

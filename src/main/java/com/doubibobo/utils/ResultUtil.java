@@ -1,4 +1,4 @@
-package utils;
+package com.doubibobo.utils;
 
 import com.doubibobo.domain.Result;
 

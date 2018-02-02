@@ -7,7 +7,7 @@ import com.doubibobo.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import utils.ResultUtil;
+import com.doubibobo.utils.ResultUtil;
 
 import javax.validation.Valid;
 import java.util.List;
